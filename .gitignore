@@ -1,0 +1,77 @@
+# --------------------------------------------------
+# Terraform
+# --------------------------------------------------
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan output
+*.tfplan
+
+# --------------------------------------------------
+# Environment & Secrets
+# --------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+*.jks
+*.kubeconfig
+
+# --------------------------------------------------
+# AWS / Cloud
+# --------------------------------------------------
+.aws/
+aws-credentials*
+aws-config*
+
+# --------------------------------------------------
+# User data / logs
+# --------------------------------------------------
+cloud-init-output.log
+cloud-init.log
+userdata.log
+logs/
+*.log
+
+# --------------------------------------------------
+# OS / Editor / IDE
+# --------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --------------------------------------------------
+# Shell history / temp
+# --------------------------------------------------
+.bash_history
+.zsh_history
+*.pid
+tmp/
+
+# --------------------------------------------------
+# Generated artifacts
+# --------------------------------------------------
+dist/
+build/
+out/
+
+# --------------------------------------------------
+# Optional: Keep example tfvars
+# --------------------------------------------------
+!terraform.tfvars.example
